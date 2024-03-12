@@ -465,3 +465,27 @@ button a{
         width: 100%;
     }
 }
+/*IMG STYLES*/
+#img{
+    padding: 20px 0px;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.imgFood{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+
+}
+.imgFood img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 480px) {
+    .imgFood {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
