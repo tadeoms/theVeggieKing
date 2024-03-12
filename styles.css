@@ -163,6 +163,7 @@ header ul{
 	display: none;
 	background: #FFFFFF;
 	position: absolute;
+    z-index: 1;
 	top: 60px;
 	left: 0;
 	width: 100%;
