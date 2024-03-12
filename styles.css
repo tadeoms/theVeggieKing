@@ -52,14 +52,14 @@ h1{
     color: #212121;
     font-weight: 900;
     font-size: 61px;
-    kerning: 1px;
+    letter-spacing: 1px;
     margin: 5px 0;
 }
 h2{
 	color: #212121;
 	font-weight: 600;
 	font-size: 35px;
-	kerning: 0.25px;
+	letter-spacing: 0.25px;
 	margin: 5px 0;
 }
 h3{
@@ -72,35 +72,35 @@ h4{
     color: #212121;
     font-weight: 900;
     font-size: 35px;
-    kerning: 0.25px;
+    letter-spacing: 0.25px;
     margin: 5px 0;
 }
 h5{
     color: #212121;
     font-weight: 600;
     font-size: 25px;
-    kerning: 0.25px;
+    letter-spacing: 0.25px;
     margin: 5px 0;
 }
 .body{
     color: #212121;
 	font-weight: regular;
 	font-size: 21px;
-	kerning: 1px;
+	letter-spacing: 1px;
 	margin: 5px 0;
 }
 .body2{
 	color: #212121;
 	font-weight: regular;
 	font-size: 16px;
-	kerning: 0;
+	letter-spacing: 0;
 	margin: 5px 0;
 }
 .caption{
 	color: #212121;
 	font-weight: 600;
 	font-size: 17px;
-	kerning: 0.5px;
+	letter-spacing: 0.5px;
 	margin: 5px 0;
 }
 a{
@@ -119,21 +119,21 @@ a{
         color: #212121;
         font-weight: 900;
         font-size: 35px;
-        kerning: 0.25px;
+        letter-spacing: 0.25px;
         margin: 5px 0;
     }
     h2{
         color: #212121;
         font-weight: 600;
         font-size: 25px;
-        kerning: 0.25px;
+        letter-spacing: 0.25px;
         margin: 5px 0;
     }
     .body{
         color: #212121;
         font-weight: regular;
         font-size: 16px;
-        kerning: 0;
+        letter-spacing: 0;
         margin: 5px 0;
     }
 }
