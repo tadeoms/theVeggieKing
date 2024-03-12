@@ -242,3 +242,90 @@ footer ul li {
         padding: 10px 10px;
     }
 }
+
+/*PRESENTATION STYLES*/
+#presentation{
+    overflow: hidden;
+    height: 100vh;
+}
+.presentationInfo{
+    width: 80%;
+}
+button{
+    font-weight: medium;
+    font-size: 16px;
+    kerning: 1px;
+    background-color:#FB8C00;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+button:hover{
+    background-color: #FFA83A;
+}
+button a{
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.rectangle{
+    background-color: #2e7d32;
+    height: 100%;
+    width: 28%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+.presentationContent{
+    display: flex;    
+    gap: 40px;
+    align-items: center;
+    padding: 0 90px;
+    height: 100%;
+}
+#dynamicImage{
+    width: 500px;
+}
+.subtitle{
+    margin-bottom: 20px;
+    width: 65%;
+}
+@media screen and (max-width: 768px) {
+    #presentation {
+        height: 100%;
+    }
+    .rectangle {
+        height: 100%;
+    }
+    .presentationContent {
+        padding: 80px 40px;
+        height: 100%;
+    }
+    #dynamicImage {
+        float: right;
+        width: 100%;
+        max-width: 450px;
+        margin-top: 0%;
+        margin-right: -100px; 
+    }
+    .dynamicImageContent {
+        position: absolute;
+        right: 0;
+        overflow: hidden; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rectangle {
+        width: 15%;
+    }
+    .presentationContent {
+        padding: 80px 20px;
+    }
+    #dynamicImage {
+        max-width: 400px;
+        margin-right: -140px; 
+    }
+}

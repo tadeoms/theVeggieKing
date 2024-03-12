@@ -35,3 +35,18 @@ function closeMenuOnDesktop() {
 }
 window.onload = closeMenuOnDesktop;
 window.addEventListener("resize", closeMenuOnDesktop);
+
+
+let images = ["./assets/img/food1.png", "./assets/img/food2.png", "assets/img/food3.png", "assets/img/food4.png"];
+let imageIndex = 0; 
+
+function changeImage() {
+    let imgElement = document.getElementById("dynamicImage");
+    imgElement.src = images[imageIndex];
+    imageIndex++;
+    if (imageIndex === images.length) {
+        imageIndex = 0;
+    }
+}
+changeImage();
+setInterval(changeImage, 2000);
