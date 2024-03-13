@@ -27,7 +27,7 @@ function closeMenuOnDesktop() {
     let closeIcon = document.getElementById("closeIcon");
     let menuList = document.getElementById("menuList");
 
-    if (window.innerWidth >= 768) { 
+    if (window.innerWidth >= 750) { 
         menuList.style.display = "none";
         menuIcon.style.display = "inline";
         closeIcon.style.display = "none";
