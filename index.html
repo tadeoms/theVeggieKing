@@ -11,10 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>THE VEGGIE KING</title>
 </head>
-<body>
+<body class="fade-in">
     <header>
         <div>
-            <img src="./assets/icons/logo.svg" alt="">
+            <a href="#presentation">
+                <img src="./assets/icons/logo.svg" alt="">
+            </a>
         </div>
         <nav class="desktopNav">
             <ul class="caption">
@@ -27,12 +29,12 @@
             <img src="./assets/icons/menu.svg" alt="Abrir menú" id="menuIcon" onclick="toggleMenu()">
             <img src="./assets/icons/closeMenu.svg" alt="Cerrar menú" id="closeIcon"  onclick="toggleMenu()">
         </nav> 
+        <ul class="caption" id="menuList">
+            <li><a href="#about" onclick="closeMenu()">ABOUT US</a></li>
+            <li><a href="#menu" onclick="closeMenu()">MENU</a></li>
+            <li><a href="#contact" onclick="closeMenu()">CONTACT</a></li>
+        </ul>
     </header>
-    <ul class="caption" id="menuList">
-        <li><a href="#about" onclick="closeMenu()">ABOUT US</a></li>
-        <li><a href="#menu" onclick="closeMenu()">MENU</a></li>
-        <li><a href="#contact" onclick="closeMenu()">CONTACT</a></li>
-    </ul>
     <section id="presentation">
         <div class="rectangle"></div>
         <div class="presentationContent">
@@ -52,10 +54,10 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" >
         <div class="aboutContent">
             <div class="circle"></div>
-            <img src="./assets/img/aboutUs.png" alt="">
+            <img src="./assets/img/aboutUs.png" class="elemento-flotante" alt="">
         </div>
         <div class="aboutInfo">
             <h3>About Us</h3>
@@ -115,22 +117,29 @@
                 <h5>Today 12 pm - 9 pm</h5>
                 <p class="body2">Working Hours</p>
             </div>
+
             <div class="contactCard">
-                <img src="./assets/icons/map.svg" alt="">
-                <h5>3883 Rupert St, Vancouver</h5>
-                <p class="body2">Find us</p>
+                <a href="https://maps.app.goo.gl/ZuaGcqbt2NrLYMz1A" target="_blank">
+                    <img src="./assets/icons/map.svg" alt="">
+                    <h5>3883 Rupert St, Vancouver</h5>
+                    <p class="body2">Find us</p>
+                </a>
             </div>            
             <div class="contactCard">
-                <img src="./assets/icons/phone.svg" alt="">
-                <h5>(604) 569-2198</h5>
-                <p class="body2">Call us</p>
+                <a href="tel:+5492622571954">
+                    <img src="./assets/icons/phone.svg" alt="">
+                    <h5>(604) 569-2198</h5>    
+                    <p class="body2">Call us</p>
+                </a>
             </div>
         </div>
     </section>
     <footer>
         <div class="footerInfo">
             <div>
-                <img src="./assets/icons/logo.svg" alt="">
+                <a href="#presentation">
+                    <img src="./assets/icons/logo.svg" alt="">
+                </a>
             </div>
             <nav>
                 <ul class="caption">

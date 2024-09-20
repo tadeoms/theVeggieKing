@@ -138,6 +138,30 @@ a{
     }
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes flotar {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+  }
+  
+  .elemento-flotante {
+    animation: flotar 3s ease-in-out infinite; 
+  }
+  
 /*HEADER STYLES*/
 header{
     display: flex;
@@ -146,6 +170,10 @@ header{
     padding: 15px 90px ;
 	background: #FFFFFF;
     box-shadow: 0px 10px 20px 0px rgba(33, 33, 33, 0.25);
+    position: fixed; 
+    top: 0;
+    width: 90%;
+    z-index: 1000;
 }
 header ul{
     display: flex;
@@ -163,9 +191,9 @@ header ul{
 	display: none;
 	background: #FFFFFF;
 	position: absolute;
-    z-index: 1;
 	top: 60px;
 	left: 0;
+    z-index: 1000;
 	width: 100%;
 }
 #menuList li{
@@ -174,11 +202,13 @@ header ul{
 @media screen and (max-width: 1150px) {
     header{
         padding: 10px 40px;
+        width: 95%;
     }
 }
 @media screen and (max-width: 750px) {
     header {
         padding: 10px 10px;
+        width: 97%;
     }
     .desktopNav {
         display: none;
@@ -249,6 +279,7 @@ footer ul li {
 
 /*PRESENTATION STYLES*/
 #presentation{
+    position: relative;
     overflow: hidden;
     height: 100vh;
     
@@ -276,20 +307,23 @@ button a{
     justify-content: center;
     align-items: center;
 }
-.rectangle{
+.rectangle {
     background-color: #2e7d32;
     height: 100%;
-    width: 28%;
+    width: 28%; 
     position: absolute;
     z-index: -1;
     right: 0;
+    overflow: hidden; 
 }
-.presentationContent{
+
+.presentationContent {
     display: flex;    
     gap: 40px;
     align-items: center;
     padding: 0 90px;
     height: 100%;
+    overflow: hidden; 
 }
 #dynamicImage{
     width: 500px;
@@ -302,12 +336,15 @@ button a{
     #presentation {
         height: 100%;
     }
-    .rectangle {
-        height: 100%;
-    }
-    .presentationContent {
-        padding: 80px 40px;
-        height: 100%;
+    @media screen and (max-width: 1150px) {
+        .rectangle {
+            height: 100%;
+            width: 20%; 
+        }
+        .presentationContent {
+            padding: 80px 40px;
+            height: 100%;
+        }
     }
     #dynamicImage {
         float: right;
@@ -445,6 +482,12 @@ button a{
 	padding-bottom: 10px;
 	border-radius: 0 0 10px 10px;
 	text-align: left;
+    transition: transform 0.3s ease-in-out; 
+    text-align: center; /
+}
+.dishCard:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
 }
 .dishCardText{
     padding: 0px 20px;
@@ -512,6 +555,13 @@ button a{
 	margin: 10px;
 	width: 350px;
 	padding-top: 10px;
+    transition: transform 0.3s ease-in-out; 
+    cursor: pointer; 
+    text-align: center;
+}
+.contactCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
 }
 .contactCard img{
     width: 10%;

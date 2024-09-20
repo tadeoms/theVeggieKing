@@ -50,3 +50,12 @@ function changeImage() {
 }
 changeImage();
 setInterval(changeImage, 2000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.fade-in');
+    elements.forEach((element, index) => {
+        setTimeout(() => {
+            element.classList.add('show');
+        }, index * 200); 
+    });
+});
